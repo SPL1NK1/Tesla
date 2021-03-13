@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+
+@mixin Monserat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 900px;
+    background: #fff;
+
+    .container {
+        width: 100%;
+        max-width: 1340px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .header__inner {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        padding-left: 400px;
+        margin-top: -35px;
+    }
+
+    .nav__link {
+        @include Monserat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 30px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .intro__background {
+        width: 1300px;
+        margin-top: 125px;
+        margin-left: -110px;
+    }
+
+    .intro__title {
+        position: absolute;
+        @include Monserat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 70px;
+        color: #000000;
+        margin-left: 550px;
+        padding-top: 200px;
+    }
+
+    .intro__title_sub {
+        position: absolute;
+        @include Monserat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+    }
+
+    .header__img_text {
+        @include Monserat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 50px;
+
+        color: #000000;
+        padding-top: 200px;
+        margin-left: -750px;
+    }
+
+    .menu__burger {
+        position: absolute;
+        margin-left: 1200px;
+        padding-top: 25px;
+    }
+
+    .header__low_info {
+        padding-top: 80px;
+        margin-left: 200px;
+    }
+
+    .header__test_drive {
+        margin-top: -55px;
+        margin-left: 750px;
+    }
+
+    .test_drive {
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 1000px;
+        width: 160px;
+        height: 40px;
+        @include Monserat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #E51937;
+        border: 2px solid #E51937;
+        box-sizing: border-box;
+        background:transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+@media (max-width:890px) {
+    .nav {
+        display: flex;
+    }
+}
